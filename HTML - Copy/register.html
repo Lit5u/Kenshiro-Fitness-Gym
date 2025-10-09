@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenshiro Fitness Registration</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+      <h1>Kenshiro Fitness Gym</h1>
+      <nav>
+        <ul>
+          <a href="index.html">HOME</a>
+          <a href="login.html">LOGIN</a>
+          <a href="register.html">REGISTER</a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-section">
+        <h2>Register for an Account</h2>
+        <form id="registerForm" action="#" method="post">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+
+          <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+      </section>
+    </main>
+</body>
+</html>

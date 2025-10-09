@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0;
+    color: #333;
+}
+
+.slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.slides-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: transform 1.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+#slide1 {
+    background-image: url("/Pictures/Kenshiro_Background_1.jpg");
+}
+
+#slide2 {
+    background-image: url("/Pictures/Kenshiro_Background_2.jpg");
+}
+
+#slide3 {
+    background-image: url("/Pictures/Kenshiro_Background_3.jpg");
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color:#e10600;
+}
+
+header nav a{
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color: #e10600;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background-blend-mode: normal;
+    background-color: rgba(34,34,34,0.6);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.hero .btn {
+    background: #e10600;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #b00000;
+}
+
+.why-join h2 {
+    color:#222;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.feature {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.04);
+}
+
+.feature h3 {
+    color: #e10600;
+}
+
+.feature p {
+    color: #555;
+}
+
+.feature img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.form-section {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.08);
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    color: #c00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background: #c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background: #900;
+}
+
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login-section {
+    max-width: 400px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    color: #c00;
+    text-align: center;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-section label {
+    margin: 5px 0;
+}
+
+.login-section input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-section button {
+    padding: 10px;
+    background: #c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.login-section button:hover {
+    background: #900;
+}
+
+.login-section p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.login-section a {
+    color: #e10600;
+    text-decoration: none;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
